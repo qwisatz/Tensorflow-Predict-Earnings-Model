@@ -18,7 +18,7 @@ We have a list of data of 2 CSV data. One for training and one for testing the t
 Panda will be used to input the CSV files and then the data will be scaled.
 Using Tensorflow with the data, a model will be created and then compared with the test data.
 Tensorboard will be used to visualise the process.
-Once the model created
+Using the trained model, the test data can be inputted into the model without training the model every time.
 
 
 # Goal of project
