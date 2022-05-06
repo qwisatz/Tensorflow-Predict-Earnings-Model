@@ -14,7 +14,11 @@ Building and Deploying Deep Learning Applications with TensorFlow by Adam Geitge
 
 # How it will work
 
-1. We have a list of data of 2 CSV data.
+We have a list of data of 2 CSV data. One for training and one for testing the trained model.
+Panda will be used to input the CSV files and then the data will be scaled.
+Using Tensorflow with the data, a model will be created and then compared with the test data.
+Tensorboard will be used to visualise the process.
+Once the model created
 
 
 # Goal of project
