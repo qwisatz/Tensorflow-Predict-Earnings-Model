@@ -44,4 +44,6 @@ We cna then see the accuracy of the trained model that can be used for a dataset
 
 9. Run the session, save logs as different files for comparing and print out final testing cost of both the train and test data to compare.
 
-10. (Optional) print out the training cost every 5 epoch (training loop)
+10. (Optional) Print out the training cost every 5 epoch (training loop)
+
+11. (Optional) Run the trained model and predict results.
