@@ -20,6 +20,8 @@ Using Tensorflow with the data, a model will be created and then compared with t
 Tensorboard will be used to visualise the process.
 Using the trained model, the test data can be inputted into the model without training the model every time.
 
+https://github.com/github/{repository}/blob/assets/gh2.png
+
 
 # Goal of project
 We will see that the real earnings are in comparision to the earnings that the neural netwrok predicted using the same data.
