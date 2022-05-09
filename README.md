@@ -21,6 +21,7 @@ Tensorboard will be used to visualise the process.
 Using the trained model, the test data can be inputted into the model without training the model every time.
 
 ![Screenshot](gh2.png)
+(Fig.1) Higher level diagram of a standard neural network model.
 
 
 # Goal of project
