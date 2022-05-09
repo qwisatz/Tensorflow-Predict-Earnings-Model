@@ -89,4 +89,5 @@ for epoch in range(training_epochs):
 ```
 ````
 4. Type in terminal:
+5. 
 tensorboard --logdir=05/logs ... 05/logs is the directoruy in this case
