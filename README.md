@@ -25,7 +25,7 @@ Using the trained model, the test data can be inputted into the model without tr
 
 # Goal of project
 We will see that the real earnings are in comparision to the earnings that the neural netwrok predicted using the same data.
-We cna then see the accuracy of the trained model that can be used for a dataset of similar kind.
+We can then see the accuracy of the trained model that can be used for a dataset of similar kind.
 
 
 # Steps
