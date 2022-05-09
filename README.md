@@ -51,3 +51,42 @@ We can then see the accuracy of the trained model that can be used for a dataset
 10. (Optional) Print out the training cost every 5 epoch (training loop)
 
 11. (Optional) Run the trained model and predict results.
+
+
+# Logging
+To create logging, use: 
+1.training_writer = tf.summary.FileWriter("./logs/{}/training".format(RUN_NAME), session.graph) ... For training logs
+2.testing_writer = tf.summary.FileWriter("./logs/{}/testing".format(RUN_NAME), session.graph) ... For test logs
+
+3. Create a logging at every 5 epoch loop:
+
+````
+```
+for epoch in range(training_epochs):
+
+        # Feed in the training data and do one step of neural network training
+        session.run(optimizer, feed_dict={X: X_scaled_training, Y: Y_scaled_training})
+
+        #===================================
+        # LOGGING AFTER EVERY EPOCHS
+        #===================================
+        # Every few training steps (EPOCHs), log our progress
+        if epoch % 5 == 0:
+            # Get the current accuracy scores by running the "cost" operation on the training and test data sets
+            # GETS CURRENT
+            # GET TRAINING COST FOR EVEY 5 EPOCJ LOOP
+            # CALL THE COST FUNCTION
+            # ADD IN , SUMMARY TO GET SUMMARY INFO AS WELL IN ONE GO
+            training_cost, training_summary = session.run([cost, summary], feed_dict={X: X_scaled_training, Y:Y_scaled_training})
+            testing_cost, testing_summary = session.run([cost, summary], feed_dict={X: X_scaled_testing, Y:Y_scaled_testing})
+
+            # Write the current training status to the log files (Which we can view with TensorBoard)
+            training_writer.add_summary(training_summary, epoch)
+            testing_writer.add_summary(testing_summary, epoch)
+
+            # Print the current training status to the screen
+            print("Epoch: {} - Training Cost: {}  Testing Cost: {}".format(epoch, training_cost, testing_cost))
+```
+````
+4. Type in terminal:
+tensorboard --logdir=05/logs ... 05/logs is the directoruy in this case
