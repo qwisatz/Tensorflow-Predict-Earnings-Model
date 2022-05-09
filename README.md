@@ -1,4 +1,4 @@
-# Tensorflow Application to Predict Earnings
+# Tensorflow Application to Predict Earnings FROM A CSV data sheet
 
 
 This project will create a TF model to predict earnings from an imaginary company given a list of data with the earnings.
