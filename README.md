@@ -20,7 +20,7 @@ Using Tensorflow with the data, a model will be created and then compared with t
 Tensorboard will be used to visualise the process.
 Using the trained model, the test data can be inputted into the model without training the model every time.
 
-https://github.com/qwisatz/Tensorflow-Predict-Earnings-Model/blob/main/gh2.png
+![Screenshot](gh2.png)
 
 
 # Goal of project
